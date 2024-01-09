@@ -14,9 +14,9 @@ uses: actions/setup-java@v2
 with:
 java-version: '11'
 distribution: 'adopt'
-  - name: Grant execute permission for gradlew
-  run: chmod +x gradlew
-         - name: Start SUT
+-name: Grant execute permission for gradlew
+run: chmod +x gradlew
+       - name: Start SUT
 # Запускаем SUT,
 # имя файла SUT будет отличаться в каждой задаче.
 # & означает, что в фоновом режиме не блокируем терминал для запуска тестов,
